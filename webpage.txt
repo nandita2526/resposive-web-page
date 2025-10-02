@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      background: #ecf0f1;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+    }
+
+    .btn {
+      background: #e67e22;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .hero img {
+      flex: 1;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 50px;
+      background: #fff;
+    }
+
+    .feature {
+      flex: 1;
+      margin: 20px;
+      padding: 20px;
+      background: #f4f4f4;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero img {
+        margin-top: 20px;
+      }
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h2>MyBrand</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Build Your Future With Us</h1>
+      <p>Join thousands of learners and grow your skills with our platform. Learn anytime, anywhere.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+    <img src="https://via.placeholder.com/400" alt="Hero Image">
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <h3>🚀 Fast</h3>
+      <p>Our service is super quick and reliable.</p>
+    </div>
+    <div class="feature">
+      <h3>📱 Responsive</h3>
+      <p>Works perfectly on all devices.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Secure</h3>
+      <p>Your data is safe with us.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyBrand | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
